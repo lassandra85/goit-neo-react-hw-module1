@@ -1,0 +1,32 @@
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    gap: 4px;
+    align-items: center;
+    padding: 30px;
+
+    overflow: hidden;
+    border: 1px solid #3f3f3f;
+    border-radius: 5px;
+}
+
+.nameFriend {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+.status {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+.onLine {
+    color: green;
+}
+
+.offLine {
+    color: red;
+}
