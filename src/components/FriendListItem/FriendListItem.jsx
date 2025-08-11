@@ -2,9 +2,9 @@ import clsx from 'clsx';
 import css from './FriendListItem.module.css';
 import PropTypes from 'prop-types';
 
-const FriendListItem = ({ id, avatar, name, isOnline }) => {
+const FriendListItem = ({ avatar, name, isOnline }) => {
     return (
-        <li className={clsx(css.item)} key={id}>
+        <div className={clsx(css.card)}>
             <img src={avatar} alt="Avatar" width="60" />
             <p className={clsx(css.nameFriend)}>{name}</p>
             <p
@@ -15,12 +15,11 @@ const FriendListItem = ({ id, avatar, name, isOnline }) => {
             >
                 {isOnline ? 'Online' : 'Offline'}
             </p>
-        </li>
+        </div>
     );
 };
 
 FriendListItem.propTypes = {
-    id: PropTypes.number.isRequired,
     avatar: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     isOnline: PropTypes.bool.isRequired,
